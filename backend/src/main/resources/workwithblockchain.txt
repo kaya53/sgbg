@@ -1,0 +1,18 @@
+ 1. 프라이빗 네트워크를 실행한 후 가나슈의 경우 첫번째 계정의 해시값과 private key 값을 application.properties의
+ eth.admin.address=<계정의 해시값>
+ eth.admin.private=<privateKey값>
+ 와 같이 저장합니다.
+
+ 2. Cash.sol 의 경우엔 한번만 배포가 되어야 합니다.
+ 따라서 리믹스에 가서 먼저 저희가 올린 private network와 연결을 한 후
+ Cash.sol을 컴파일하고 initial 값을 많이 주고 배포를 합니다.
+ 배포를 성공하면 contract의 address 값을 볼 수 있습니다.
+ 그것을
+ eth.cash.contract=<contractAddress값>
+ 와 같이 저장합니다.
+
+ 이제 준비가 다 되었습니다. 즐거운 코딩~~
+
+
+ ## 고민할 점
+ 트랜잭션을 저장은 하는데 이 트랜잭션을 보고 싶다면 트랜잭션의 id값을 보내줘야 한다.

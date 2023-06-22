@@ -1,0 +1,96 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.3'
+    id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.sgbg'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '15'
+targetCompatibility = '15'
+description = 'SgBg Blockchain'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+jar{
+    enabled=false
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    // web + lombok
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'junit:junit:4.13.2'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // MySQL
+    runtimeOnly 'mysql:mysql-connector-java'
+
+    // JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    annotationProcessor("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    // QueryDSL
+    implementation 'com.querydsl:querydsl-jpa'
+    // Querydsl JPAAnnotationProcessor 사용 지정
+    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa"
+    // java.lang.NoClassDefFoundError(javax.annotation.Entity) 발생 대응
+    annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+    // java.lang.NoClassDefFoundError(javax.annotation.Generated) 발생 대응
+    annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+
+    // spring boot dev tools
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    // spring boot test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // web3j
+    implementation 'org.web3j:core:4.5.5'
+    implementation 'org.web3j:web3j-spring-boot-starter:1.6.0'
+
+    // hyperledger-fabric
+    implementation 'org.hyperledger.fabric-sdk-java:fabric-sdk-java:1.4.0'
+
+    // spring doc - swagger
+    implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+
+    // json
+    implementation 'org.json:json:20220320'
+
+    // Redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// clean task 실행시 QClass 삭제
+clean {
+    delete file('src/main/generated') // 인텔리제이 Annotation processor 생성물 생성 위치
+}
+
+//
+//dependencies {
+//    compile(group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.5.6') {
+//        exclude(module: 'commons-logging')
+//    }
+//}
+

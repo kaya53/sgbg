@@ -1,0 +1,20 @@
+{
+    "name": "sample",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "truffle:init": "truffle init",
+        "truffle:develop": "truffle develop",
+        "truffle:test": "truffle test"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "solc": "^0.7.6",
+        "truffle": "^5.0.44"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.7.3"
+    }
+}

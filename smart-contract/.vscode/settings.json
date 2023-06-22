@@ -1,0 +1,14 @@
+{
+    "workbench.tree.indent": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 8,
+    "solidity.compileUsingLocalVersion": "/workspaces/S07P22A707/smart-contract/soljson-v0.8.17+commit.8df45f5f.js",
+    "solidity.linter": "solium",
+    "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+    "solidity.validationDelay": 1500,
+    "solidity.soliumRules": {
+        "quotes": ["error", "double"],
+        "indentation": ["error", 4]
+    }
+}
