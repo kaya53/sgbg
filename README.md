@@ -1,16 +1,36 @@
 
-# ☺ 싱글벙글
+![](readme-assets/sgbg-logo.png)
 
-#### 혼자여서 싱글, 같이여서 벙글
+# 혼자여서 싱글, 같이여서 벙글, 싱글벙글
 
-혼자하기 힘든, 혼자하기 싫은 사람들을 위한
+## 🙍혼자하기 힘든, 혼자하기 싫은 사람들을 위한
+## 🧑‍🤝‍🧑블록체인 기반 단기 모임 서비스
 
-블록체인 기반 단기 모임 서비스
+<hr/>
+<br/>
+
+## 🗂️ 프로젝트 소개
+### 🧚 혼자여도 다양하게 놀 수 있어요! 블록 체인 기반으로 안전하게 모임을 찾아보세요
+![](readme-assets/sgbg-img-001.png)
+
+### ✅ 방장일 때, 참여자일 때의 유저 점수를 각각 다르게 파악할 수 있어요
+![](readme-assets/sgbg-img-002.png)
+
+
+### 🪙 블록체인에 모임 정보가 모두 저장되어 신뢰할 수 있어요!
+![](readme-assets/sgbg-img-003.png)
+
+
+### ✍️ 모임 후엔 리뷰를 남겨주세요
+![](readme-assets/sgbg-img-004.png)
 
 <br/>
 
+## 시스템 아키텍처
+![](readme-assets/sgbg-img-005.png)
+
 ## 기술 스택
-##### FrontEnd
+#### FrontEnd
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
@@ -44,11 +64,6 @@
 <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
 <img src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white">
 
-## 기능 소개
-
-<br/>
-
-<br/>
 
 ## 산출물
 
@@ -60,21 +75,18 @@
 
 - [ER 다이어그램](https://heather-slice-e94.notion.site/ER-37043edd33be4312838641545e3eaa80)
 
-- [아키텍처](https://heather-slice-e94.notion.site/Architecture-26a066f7ec5f4e978b8345323b07f86c)
-
-
 <br/>
 
 ### 팀원 소개
 
 
-| 이름   | 역할 |
-| ------ | ---- |
-| 김성진 (BE) |      |
-| 박남주 (FE)      |      |
-| 박원창 (BE) | |
-|  유지슬 (BE)  |      |
-| 임지민 (FE) | |
-| 조혜은 (BE) |  |
+| 이름   |
+| ------ |
+| 김성진 (BE) |
+| 박남주 (FE)  
+| 박원창 (BE) |
+|  유지슬 (BE)|
+| 임지민 (FE) |
+| 조혜은 (BE) |
 
 <br/>
